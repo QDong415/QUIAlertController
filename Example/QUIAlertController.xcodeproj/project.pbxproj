@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2D61AE5A3EA86472D4C17236 /* Pods_QUIAlertController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC75B2811BAB51403C9A017D /* Pods_QUIAlertController_Tests.framework */; };
+		36F97A9C28958EFE00EB679C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A8B28958EFE00EB679C /* RootViewController.m */; };
+		36F97A9D28958EFE00EB679C /* ThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A8D28958EFE00EB679C /* ThirdView.m */; };
+		36F97A9E28958EFE00EB679C /* ThirdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36F97A8F28958EFE00EB679C /* ThirdView.xib */; };
+		36F97A9F28958EFE00EB679C /* AlertNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A9328958EFE00EB679C /* AlertNavigationViewController.m */; };
+		36F97AA028958EFE00EB679C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A9428958EFE00EB679C /* AppDelegate.m */; };
+		36F97AA128958EFE00EB679C /* ConInAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A9728958EFE00EB679C /* ConInAlertViewController.m */; };
+		36F97AA228958EFE00EB679C /* CommonCodeWriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F97A9B28958EFE00EB679C /* CommonCodeWriteView.m */; };
 		3DE40069AB54710DC1E1C158 /* Pods_QUIAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BDDF18FABC103DCB474D76 /* Pods_QUIAlertController_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* QAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* QViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +28,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10CC2499E891B4323EBE88D7 /* QUIAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QUIAlertController.podspec; path = ../QUIAlertController.podspec; sourceTree = "<group>"; };
-		3D6E385D3188A5A7252CE95B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		10CC2499E891B4323EBE88D7 /* QUIAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QUIAlertController.podspec; path = ../QUIAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		36F97A8B28958EFE00EB679C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		36F97A8D28958EFE00EB679C /* ThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdView.m; sourceTree = "<group>"; };
+		36F97A8E28958EFE00EB679C /* ThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdView.h; sourceTree = "<group>"; };
+		36F97A8F28958EFE00EB679C /* ThirdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdView.xib; sourceTree = "<group>"; };
+		36F97A9028958EFE00EB679C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		36F97A9228958EFE00EB679C /* AlertNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertNavigationViewController.h; sourceTree = "<group>"; };
+		36F97A9328958EFE00EB679C /* AlertNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertNavigationViewController.m; sourceTree = "<group>"; };
+		36F97A9428958EFE00EB679C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36F97A9628958EFE00EB679C /* ConInAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConInAlertViewController.h; sourceTree = "<group>"; };
+		36F97A9728958EFE00EB679C /* ConInAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConInAlertViewController.m; sourceTree = "<group>"; };
+		36F97A9828958EFE00EB679C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36F97A9A28958EFE00EB679C /* CommonCodeWriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCodeWriteView.h; sourceTree = "<group>"; };
+		36F97A9B28958EFE00EB679C /* CommonCodeWriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCodeWriteView.m; sourceTree = "<group>"; };
+		3D6E385D3188A5A7252CE95B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3F263DE2E60388BADE90999C /* Pods-QUIAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUIAlertController_Tests.release.xcconfig"; path = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		48E1D165E6654CB7F3E8E0CA /* Pods-QUIAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUIAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		58BDDF18FABC103DCB474D76 /* Pods_QUIAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QUIAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,10 +67,6 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* QUIAlertController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QUIAlertController-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* QAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* QUIAlertController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUIAlertController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,9 +76,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		65CA9936CC87E3FC5019F8EC /* Pods-QUIAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUIAlertController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC75B2811BAB51403C9A017D /* Pods_QUIAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QUIAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F78C78C624EC181BA3141F80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F78C78C624EC181BA3141F80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F7F78AA761B925735AF357AF /* Pods-QUIAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QUIAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +107,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36F97A8C28958EFE00EB679C /* XibView */ = {
+			isa = PBXGroup;
+			children = (
+				36F97A8D28958EFE00EB679C /* ThirdView.m */,
+				36F97A8E28958EFE00EB679C /* ThirdView.h */,
+				36F97A8F28958EFE00EB679C /* ThirdView.xib */,
+			);
+			path = XibView;
+			sourceTree = "<group>";
+		};
+		36F97A9128958EFE00EB679C /* NavigationInAlert */ = {
+			isa = PBXGroup;
+			children = (
+				36F97A9228958EFE00EB679C /* AlertNavigationViewController.h */,
+				36F97A9328958EFE00EB679C /* AlertNavigationViewController.m */,
+			);
+			path = NavigationInAlert;
+			sourceTree = "<group>";
+		};
+		36F97A9528958EFE00EB679C /* ControllerInAlert */ = {
+			isa = PBXGroup;
+			children = (
+				36F97A9628958EFE00EB679C /* ConInAlertViewController.h */,
+				36F97A9728958EFE00EB679C /* ConInAlertViewController.m */,
+			);
+			path = ControllerInAlert;
+			sourceTree = "<group>";
+		};
+		36F97A9928958EFE00EB679C /* FrameView */ = {
+			isa = PBXGroup;
+			children = (
+				36F97A9A28958EFE00EB679C /* CommonCodeWriteView.h */,
+				36F97A9B28958EFE00EB679C /* CommonCodeWriteView.m */,
+			);
+			path = FrameView;
+			sourceTree = "<group>";
+		};
 		484B007338C0157617570B6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +152,6 @@
 				65CA9936CC87E3FC5019F8EC /* Pods-QUIAlertController_Tests.debug.xcconfig */,
 				3F263DE2E60388BADE90999C /* Pods-QUIAlertController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +192,14 @@
 		6003F593195388D20070C39A /* Example for QUIAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* QAppDelegate.h */,
-				6003F59D195388D20070C39A /* QAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* QViewController.h */,
-				6003F5A6195388D20070C39A /* QViewController.m */,
+				36F97A9828958EFE00EB679C /* AppDelegate.h */,
+				36F97A9428958EFE00EB679C /* AppDelegate.m */,
+				36F97A9028958EFE00EB679C /* RootViewController.h */,
+				36F97A8B28958EFE00EB679C /* RootViewController.m */,
+				36F97A9528958EFE00EB679C /* ControllerInAlert */,
+				36F97A9928958EFE00EB679C /* FrameView */,
+				36F97A9128958EFE00EB679C /* NavigationInAlert */,
+				36F97A8C28958EFE00EB679C /* XibView */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -258,6 +309,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,7 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				36F97A9E28958EFE00EB679C /* ThirdView.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -364,9 +416,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* QAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* QViewController.m in Sources */,
+				36F97A9C28958EFE00EB679C /* RootViewController.m in Sources */,
+				36F97AA228958EFE00EB679C /* CommonCodeWriteView.m in Sources */,
+				36F97AA128958EFE00EB679C /* ConInAlertViewController.m in Sources */,
+				36F97A9F28958EFE00EB679C /* AlertNavigationViewController.m in Sources */,
+				36F97A9D28958EFE00EB679C /* ThirdView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				36F97AA028958EFE00EB679C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +550,13 @@
 			baseConfigurationReference = 48E1D165E6654CB7F3E8E0CA /* Pods-QUIAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QUIAlertController/QUIAlertController-Prefix.pch";
 				INFOPLIST_FILE = "QUIAlertController/QUIAlertController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dq.alertdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -510,11 +568,13 @@
 			baseConfigurationReference = F7F78AA761B925735AF357AF /* Pods-QUIAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QUIAlertController/QUIAlertController-Prefix.pch";
 				INFOPLIST_FILE = "QUIAlertController/QUIAlertController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dq.alertdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

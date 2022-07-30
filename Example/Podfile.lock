@@ -1,0 +1,16 @@
+PODS:
+  - QUIAlertController (1.0)
+
+DEPENDENCIES:
+  - QUIAlertController (from `../`)
+
+EXTERNAL SOURCES:
+  QUIAlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QUIAlertController: 98fba58f7dbbc1642faa7161caf2fd43611adc16
+
+PODFILE CHECKSUM: 69bd516b00b81ce0948c229f8e274b03cfb80c6f
+
+COCOAPODS: 1.10.0

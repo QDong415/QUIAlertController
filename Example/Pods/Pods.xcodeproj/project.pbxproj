@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ACCB2F7D01C5CEABDC34D0E7E64EE03 /* Pods-QUIAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA97DCDF82BA7CE9BAD645289FDF1589 /* Pods-QUIAlertController_Tests-dummy.m */; };
+		32F07DFFF96D16B98E313D7A92AEA090 /* VisibleViewControllerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9FB883A4227FA58E9353B8A2EDE6B4 /* VisibleViewControllerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D1D417B0D8D109053FF82F6A1DD99D2 /* QUIAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C8168A474F5DE174523F578BA82FA9 /* QUIAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AEF108519045A97DAB5EBF37DD1503E /* Pods-QUIAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C44573ADABB50C7ECB3B7EDFEE5DB0 /* Pods-QUIAlertController_Example-dummy.m */; };
+		7B0F150E33DFEDAE9FF47960F517E6E7 /* UIBorderViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A9D16369A2031872EB6A6C8F5E8F76 /* UIBorderViewHelper.m */; };
+		87C28E160AE931C8C3AD4B8EEBDC130E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8CDF6A1B2BB4791FE44F09AE631B262E /* QUIAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC8D9E98D39CA756A30F813D6067E4A /* QUIAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DF0C06A72178A73381DC52163C1477A /* QUIKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F7F0B88CD6FE18E5E9F6A2BCFC3857 /* QUIKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A3D96D07E4760D5DA1B8E91639AB3D2 /* QUIAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A8F85B0BBD35801B056A0B02F0D8A5 /* QUIAlertController.m */; };
+		9EF3F2BA02C4462F1A933D7777AED0BC /* QUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F61B70A71DD4DBAED00ADF62E91BA266 /* QUIButton.m */; };
+		A24A9945DA296061417739B4F2B3A9FD /* UIBorderViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB725A51BF30C95311A41059F2A61335 /* UIBorderViewHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6B9B0EF9D1DC2F50358E04F245B7F56 /* QUIModalPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1B5C069AE1596217E84C69FDE3FD5B /* QUIModalPresentationViewController.m */; };
+		B66953DD2E059FCE7A44417436CB8F00 /* Pods-QUIAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1C6C3BD54B8FB7F89C6A5074B2A6CB /* Pods-QUIAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB1CB0CD0A0AD9D7C0654C2AA395B5A1 /* Pods-QUIAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0334F8C712628A34EBEB7976935189 /* Pods-QUIAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCA462652B35D4EC36F1A33EA9BFC390 /* VisibleViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9EDAA08F576E11AE4BEC2029DDC3FC /* VisibleViewControllerHelper.m */; };
+		CB1188D691FD68641C18743C3F372F6E /* QUIKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2149B11986AB452D4366FA27707BB44 /* QUIKeyboardManager.m */; };
+		D34B2241913FA433935251331BB8A97B /* QUIAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF43E1EA81DB58E25B50FFB1140C5632 /* QUIAlertController-dummy.m */; };
+		DCD181E46F3DA7532EC65F7F7D5CB51E /* AdjustEdgeInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1EE05ACFCDED1DA7A27AA9DB30A092 /* AdjustEdgeInsetTextField.m */; };
+		DF7A9507501378974C5136A8C162D483 /* QUIModalPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1238FA93B7320703244D2C25F5C27735 /* QUIModalPresentationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EF57A848B24DFB1B3C4F55A62BE004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EA9E9A6ADC19CD1B90FBE761426A2F4B /* QUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DB2EB374F8E1DB815A4616CC707E33 /* QUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECBD6B597F56B72FB7A6BA6D339395A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F1DF0133413AF5A6FBAD764632F7528F /* AdjustEdgeInsetTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = A3CDA5A3357C29B6CDAAC4C5A7AAFC68 /* AdjustEdgeInsetTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D78054BD84BC30A8E22CE00ACFA758C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971C1F025ACBD8354587F8C6DB286635;
+			remoteInfo = "Pods-QUIAlertController_Example";
+		};
+		970570AF96C551F9477055301182B04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A51291A3F2320497755CDB1B6E02E7E0;
+			remoteInfo = QUIAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F7F0B88CD6FE18E5E9F6A2BCFC3857 /* QUIKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QUIKeyboardManager.h; path = QUIAlertController/Classes/QUIKeyboardManager.h; sourceTree = "<group>"; };
+		051113C1F12132B4ACBDE103A759E536 /* QUIAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QUIAlertController.framework; path = QUIAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0831E0A190F0AD48AF050BB0BD64CA01 /* Pods-QUIAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QUIAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1238FA93B7320703244D2C25F5C27735 /* QUIModalPresentationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QUIModalPresentationViewController.h; path = QUIAlertController/Classes/QUIModalPresentationViewController.h; sourceTree = "<group>"; };
+		12C8168A474F5DE174523F578BA82FA9 /* QUIAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QUIAlertController.h; path = QUIAlertController/Classes/QUIAlertController.h; sourceTree = "<group>"; };
+		21531598E823D034E86119A15CC2BB7E /* Pods-QUIAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QUIAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		21E7579EE882BBE902444EDD3C0E321E /* QUIAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QUIAlertController.debug.xcconfig; sourceTree = "<group>"; };
+		2C9FB883A4227FA58E9353B8A2EDE6B4 /* VisibleViewControllerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VisibleViewControllerHelper.h; path = QUIAlertController/Classes/VisibleViewControllerHelper.h; sourceTree = "<group>"; };
+		385ABF5431F30C41A52D2FA4E8332BC3 /* Pods-QUIAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QUIAlertController_Tests.modulemap"; sourceTree = "<group>"; };
+		51266A453D3171BAABB78A47CA400434 /* Pods-QUIAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QUIAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A1C6C3BD54B8FB7F89C6A5074B2A6CB /* Pods-QUIAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QUIAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		639BE9C7FD673A0DF4E7CD58FB61B571 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		64C44573ADABB50C7ECB3B7EDFEE5DB0 /* Pods-QUIAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QUIAlertController_Example-dummy.m"; sourceTree = "<group>"; };
+		6BC8D9E98D39CA756A30F813D6067E4A /* QUIAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QUIAlertController-umbrella.h"; sourceTree = "<group>"; };
+		6D9EDAA08F576E11AE4BEC2029DDC3FC /* VisibleViewControllerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VisibleViewControllerHelper.m; path = QUIAlertController/Classes/VisibleViewControllerHelper.m; sourceTree = "<group>"; };
+		701794F51E8941B57A5BFDCC3F4773A8 /* Pods_QUIAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QUIAlertController_Tests.framework; path = "Pods-QUIAlertController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A9D16369A2031872EB6A6C8F5E8F76 /* UIBorderViewHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIBorderViewHelper.m; path = QUIAlertController/Classes/UIBorderViewHelper.m; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		781733B8B87D567B5A6DBAA27E39C17C /* Pods-QUIAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QUIAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89B21E02E2D383B42696E9EF52D54620 /* QUIAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QUIAlertController-prefix.pch"; sourceTree = "<group>"; };
+		941BE2C654C75CDFD5E25C9C71A6D20C /* QUIAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QUIAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C0334F8C712628A34EBEB7976935189 /* Pods-QUIAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QUIAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		9D01056E5DD0633A74971F632234F64C /* Pods-QUIAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QUIAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2149B11986AB452D4366FA27707BB44 /* QUIKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QUIKeyboardManager.m; path = QUIAlertController/Classes/QUIKeyboardManager.m; sourceTree = "<group>"; };
+		A3CDA5A3357C29B6CDAAC4C5A7AAFC68 /* AdjustEdgeInsetTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AdjustEdgeInsetTextField.h; path = QUIAlertController/Classes/AdjustEdgeInsetTextField.h; sourceTree = "<group>"; };
+		AA97DCDF82BA7CE9BAD645289FDF1589 /* Pods-QUIAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QUIAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
+		AEA3E2E7746D6AACD8D7A5A72E1BC6E9 /* QUIAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QUIAlertController-Info.plist"; sourceTree = "<group>"; };
+		BF5D78D34C12629DD4922D6468C56B7C /* Pods-QUIAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QUIAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C13AD9465B0BA27468CA3CEA1EFDFAAB /* Pods-QUIAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QUIAlertController_Example-Info.plist"; sourceTree = "<group>"; };
+		D0DB2EB374F8E1DB815A4616CC707E33 /* QUIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QUIButton.h; path = QUIAlertController/Classes/QUIButton.h; sourceTree = "<group>"; };
+		DB725A51BF30C95311A41059F2A61335 /* UIBorderViewHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBorderViewHelper.h; path = QUIAlertController/Classes/UIBorderViewHelper.h; sourceTree = "<group>"; };
+		DC798E77DFFEA65912B79DC0D689463B /* Pods-QUIAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QUIAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF1E87B46A49FDA763BF629CCEC0AEB4 /* Pods-QUIAlertController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QUIAlertController_Tests-Info.plist"; sourceTree = "<group>"; };
+		E3D7B351564D955C8223D0D71621EE89 /* Pods-QUIAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QUIAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E53ACFCD4D9630E58BE2B7ADE26AF3A5 /* QUIAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QUIAlertController.release.xcconfig; sourceTree = "<group>"; };
+		E9098D12A5C9D3941BF5FE6C59E9530A /* Pods_QUIAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QUIAlertController_Example.framework; path = "Pods-QUIAlertController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A8F85B0BBD35801B056A0B02F0D8A5 /* QUIAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QUIAlertController.m; path = QUIAlertController/Classes/QUIAlertController.m; sourceTree = "<group>"; };
+		EF43E1EA81DB58E25B50FFB1140C5632 /* QUIAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QUIAlertController-dummy.m"; sourceTree = "<group>"; };
+		EFDABC3CD499AFAD91BB3F61E82AC7A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F1C2C52FD3F18A7C881771E4C6843EBE /* Pods-QUIAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-QUIAlertController_Example.modulemap"; sourceTree = "<group>"; };
+		F4755ABAEB4B9D53880784511571F543 /* QUIAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QUIAlertController.modulemap; sourceTree = "<group>"; };
+		F61B70A71DD4DBAED00ADF62E91BA266 /* QUIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QUIButton.m; path = QUIAlertController/Classes/QUIButton.m; sourceTree = "<group>"; };
+		FBB024FB2D2F181BD76F80865AE132EA /* Pods-QUIAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QUIAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE1EE05ACFCDED1DA7A27AA9DB30A092 /* AdjustEdgeInsetTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AdjustEdgeInsetTextField.m; path = QUIAlertController/Classes/AdjustEdgeInsetTextField.m; sourceTree = "<group>"; };
+		FF1B5C069AE1596217E84C69FDE3FD5B /* QUIModalPresentationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QUIModalPresentationViewController.m; path = QUIAlertController/Classes/QUIModalPresentationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FCE86576F6F12AD5579BC0690F5156D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECBD6B597F56B72FB7A6BA6D339395A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D710C84891A30B16EC325C8EC09D136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EF57A848B24DFB1B3C4F55A62BE004 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F3EE999DBCE3B14EE3E2A87B1D83A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C28E160AE931C8C3AD4B8EEBDC130E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03156F6B967B9A81A175781B4575F333 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				639BE9C7FD673A0DF4E7CD58FB61B571 /* LICENSE */,
+				941BE2C654C75CDFD5E25C9C71A6D20C /* QUIAlertController.podspec */,
+				EFDABC3CD499AFAD91BB3F61E82AC7A3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3CDD2A25CA01ADF823A1A2FC4EAAC5B6 /* QUIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				A3CDA5A3357C29B6CDAAC4C5A7AAFC68 /* AdjustEdgeInsetTextField.h */,
+				FE1EE05ACFCDED1DA7A27AA9DB30A092 /* AdjustEdgeInsetTextField.m */,
+				12C8168A474F5DE174523F578BA82FA9 /* QUIAlertController.h */,
+				E9A8F85B0BBD35801B056A0B02F0D8A5 /* QUIAlertController.m */,
+				D0DB2EB374F8E1DB815A4616CC707E33 /* QUIButton.h */,
+				F61B70A71DD4DBAED00ADF62E91BA266 /* QUIButton.m */,
+				04F7F0B88CD6FE18E5E9F6A2BCFC3857 /* QUIKeyboardManager.h */,
+				A2149B11986AB452D4366FA27707BB44 /* QUIKeyboardManager.m */,
+				1238FA93B7320703244D2C25F5C27735 /* QUIModalPresentationViewController.h */,
+				FF1B5C069AE1596217E84C69FDE3FD5B /* QUIModalPresentationViewController.m */,
+				DB725A51BF30C95311A41059F2A61335 /* UIBorderViewHelper.h */,
+				70A9D16369A2031872EB6A6C8F5E8F76 /* UIBorderViewHelper.m */,
+				2C9FB883A4227FA58E9353B8A2EDE6B4 /* VisibleViewControllerHelper.h */,
+				6D9EDAA08F576E11AE4BEC2029DDC3FC /* VisibleViewControllerHelper.m */,
+				03156F6B967B9A81A175781B4575F333 /* Pod */,
+				55D0F0931234DC460678672A69719360 /* Support Files */,
+			);
+			name = QUIAlertController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4634DC83A15490506A6C5425443663EC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CDD2A25CA01ADF823A1A2FC4EAAC5B6 /* QUIAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		533E3E42FBF9C978EC38486004EF1671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9098D12A5C9D3941BF5FE6C59E9530A /* Pods_QUIAlertController_Example.framework */,
+				701794F51E8941B57A5BFDCC3F4773A8 /* Pods_QUIAlertController_Tests.framework */,
+				051113C1F12132B4ACBDE103A759E536 /* QUIAlertController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55D0F0931234DC460678672A69719360 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4755ABAEB4B9D53880784511571F543 /* QUIAlertController.modulemap */,
+				EF43E1EA81DB58E25B50FFB1140C5632 /* QUIAlertController-dummy.m */,
+				AEA3E2E7746D6AACD8D7A5A72E1BC6E9 /* QUIAlertController-Info.plist */,
+				89B21E02E2D383B42696E9EF52D54620 /* QUIAlertController-prefix.pch */,
+				6BC8D9E98D39CA756A30F813D6067E4A /* QUIAlertController-umbrella.h */,
+				21E7579EE882BBE902444EDD3C0E321E /* QUIAlertController.debug.xcconfig */,
+				E53ACFCD4D9630E58BE2B7ADE26AF3A5 /* QUIAlertController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/QUIAlertController";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C90303B73A72A12D02D543DE7F12C5F9 /* Pods-QUIAlertController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				385ABF5431F30C41A52D2FA4E8332BC3 /* Pods-QUIAlertController_Tests.modulemap */,
+				51266A453D3171BAABB78A47CA400434 /* Pods-QUIAlertController_Tests-acknowledgements.markdown */,
+				781733B8B87D567B5A6DBAA27E39C17C /* Pods-QUIAlertController_Tests-acknowledgements.plist */,
+				AA97DCDF82BA7CE9BAD645289FDF1589 /* Pods-QUIAlertController_Tests-dummy.m */,
+				DF1E87B46A49FDA763BF629CCEC0AEB4 /* Pods-QUIAlertController_Tests-Info.plist */,
+				5A1C6C3BD54B8FB7F89C6A5074B2A6CB /* Pods-QUIAlertController_Tests-umbrella.h */,
+				FBB024FB2D2F181BD76F80865AE132EA /* Pods-QUIAlertController_Tests.debug.xcconfig */,
+				E3D7B351564D955C8223D0D71621EE89 /* Pods-QUIAlertController_Tests.release.xcconfig */,
+			);
+			name = "Pods-QUIAlertController_Tests";
+			path = "Target Support Files/Pods-QUIAlertController_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4634DC83A15490506A6C5425443663EC /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				533E3E42FBF9C978EC38486004EF1671 /* Products */,
+				DE70A555B82DE8D6A7494A0D42AA73CF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE70A555B82DE8D6A7494A0D42AA73CF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F66563217A4785AFB7D78771CE8BA0BA /* Pods-QUIAlertController_Example */,
+				C90303B73A72A12D02D543DE7F12C5F9 /* Pods-QUIAlertController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F66563217A4785AFB7D78771CE8BA0BA /* Pods-QUIAlertController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F1C2C52FD3F18A7C881771E4C6843EBE /* Pods-QUIAlertController_Example.modulemap */,
+				DC798E77DFFEA65912B79DC0D689463B /* Pods-QUIAlertController_Example-acknowledgements.markdown */,
+				21531598E823D034E86119A15CC2BB7E /* Pods-QUIAlertController_Example-acknowledgements.plist */,
+				64C44573ADABB50C7ECB3B7EDFEE5DB0 /* Pods-QUIAlertController_Example-dummy.m */,
+				BF5D78D34C12629DD4922D6468C56B7C /* Pods-QUIAlertController_Example-frameworks.sh */,
+				C13AD9465B0BA27468CA3CEA1EFDFAAB /* Pods-QUIAlertController_Example-Info.plist */,
+				9C0334F8C712628A34EBEB7976935189 /* Pods-QUIAlertController_Example-umbrella.h */,
+				9D01056E5DD0633A74971F632234F64C /* Pods-QUIAlertController_Example.debug.xcconfig */,
+				0831E0A190F0AD48AF050BB0BD64CA01 /* Pods-QUIAlertController_Example.release.xcconfig */,
+			);
+			name = "Pods-QUIAlertController_Example";
+			path = "Target Support Files/Pods-QUIAlertController_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3F51AF14F0CFA9AEFA32A5463FE76CA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1CB0CD0A0AD9D7C0654C2AA395B5A1 /* Pods-QUIAlertController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EECCA46F7B7034E349FEA1325072E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66953DD2E059FCE7A44417436CB8F00 /* Pods-QUIAlertController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0C3D8A5B484E2A03C7C6C5F5800A1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DF0133413AF5A6FBAD764632F7528F /* AdjustEdgeInsetTextField.h in Headers */,
+				8CDF6A1B2BB4791FE44F09AE631B262E /* QUIAlertController-umbrella.h in Headers */,
+				4D1D417B0D8D109053FF82F6A1DD99D2 /* QUIAlertController.h in Headers */,
+				EA9E9A6ADC19CD1B90FBE761426A2F4B /* QUIButton.h in Headers */,
+				8DF0C06A72178A73381DC52163C1477A /* QUIKeyboardManager.h in Headers */,
+				DF7A9507501378974C5136A8C162D483 /* QUIModalPresentationViewController.h in Headers */,
+				A24A9945DA296061417739B4F2B3A9FD /* UIBorderViewHelper.h in Headers */,
+				32F07DFFF96D16B98E313D7A92AEA090 /* VisibleViewControllerHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		100E67D7E5D2FFB987846EC206011CA4 /* Pods-QUIAlertController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3168297848574E5561A2779D3E74615 /* Build configuration list for PBXNativeTarget "Pods-QUIAlertController_Tests" */;
+			buildPhases = (
+				A2EECCA46F7B7034E349FEA1325072E5 /* Headers */,
+				B0EA646F804746AA2B589B0D9A484DEB /* Sources */,
+				3FCE86576F6F12AD5579BC0690F5156D /* Frameworks */,
+				0B55824DD456F89FBA6510E2D29A0470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				549E7049348A805E1916AB4946DB0521 /* PBXTargetDependency */,
+			);
+			name = "Pods-QUIAlertController_Tests";
+			productName = "Pods-QUIAlertController_Tests";
+			productReference = 701794F51E8941B57A5BFDCC3F4773A8 /* Pods_QUIAlertController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		971C1F025ACBD8354587F8C6DB286635 /* Pods-QUIAlertController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91D315355208998028C2A665D06EF48 /* Build configuration list for PBXNativeTarget "Pods-QUIAlertController_Example" */;
+			buildPhases = (
+				3F51AF14F0CFA9AEFA32A5463FE76CA2 /* Headers */,
+				D399E26B149D20C3E7BA9DF3192A80D8 /* Sources */,
+				C8F3EE999DBCE3B14EE3E2A87B1D83A9 /* Frameworks */,
+				342D912D2C1C747161B6AA1FB7780AB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F7A670D17B970E6F2CF6ED9EF264032 /* PBXTargetDependency */,
+			);
+			name = "Pods-QUIAlertController_Example";
+			productName = "Pods-QUIAlertController_Example";
+			productReference = E9098D12A5C9D3941BF5FE6C59E9530A /* Pods_QUIAlertController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A51291A3F2320497755CDB1B6E02E7E0 /* QUIAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3BFCCACA483E632794039746BC80F73 /* Build configuration list for PBXNativeTarget "QUIAlertController" */;
+			buildPhases = (
+				FD0C3D8A5B484E2A03C7C6C5F5800A1C /* Headers */,
+				987248B5630421F3CD79E062AFC67CC3 /* Sources */,
+				4D710C84891A30B16EC325C8EC09D136 /* Frameworks */,
+				B1F75D1CA8CCD85FFE0E9B7F5404763F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QUIAlertController;
+			productName = QUIAlertController;
+			productReference = 051113C1F12132B4ACBDE103A759E536 /* QUIAlertController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 533E3E42FBF9C978EC38486004EF1671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				971C1F025ACBD8354587F8C6DB286635 /* Pods-QUIAlertController_Example */,
+				100E67D7E5D2FFB987846EC206011CA4 /* Pods-QUIAlertController_Tests */,
+				A51291A3F2320497755CDB1B6E02E7E0 /* QUIAlertController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B55824DD456F89FBA6510E2D29A0470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342D912D2C1C747161B6AA1FB7780AB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F75D1CA8CCD85FFE0E9B7F5404763F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		987248B5630421F3CD79E062AFC67CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD181E46F3DA7532EC65F7F7D5CB51E /* AdjustEdgeInsetTextField.m in Sources */,
+				D34B2241913FA433935251331BB8A97B /* QUIAlertController-dummy.m in Sources */,
+				9A3D96D07E4760D5DA1B8E91639AB3D2 /* QUIAlertController.m in Sources */,
+				9EF3F2BA02C4462F1A933D7777AED0BC /* QUIButton.m in Sources */,
+				CB1188D691FD68641C18743C3F372F6E /* QUIKeyboardManager.m in Sources */,
+				A6B9B0EF9D1DC2F50358E04F245B7F56 /* QUIModalPresentationViewController.m in Sources */,
+				7B0F150E33DFEDAE9FF47960F517E6E7 /* UIBorderViewHelper.m in Sources */,
+				BCA462652B35D4EC36F1A33EA9BFC390 /* VisibleViewControllerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0EA646F804746AA2B589B0D9A484DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACCB2F7D01C5CEABDC34D0E7E64EE03 /* Pods-QUIAlertController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D399E26B149D20C3E7BA9DF3192A80D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AEF108519045A97DAB5EBF37DD1503E /* Pods-QUIAlertController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		549E7049348A805E1916AB4946DB0521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-QUIAlertController_Example";
+			target = 971C1F025ACBD8354587F8C6DB286635 /* Pods-QUIAlertController_Example */;
+			targetProxy = 8D78054BD84BC30A8E22CE00ACFA758C /* PBXContainerItemProxy */;
+		};
+		5F7A670D17B970E6F2CF6ED9EF264032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QUIAlertController;
+			target = A51291A3F2320497755CDB1B6E02E7E0 /* QUIAlertController */;
+			targetProxy = 970570AF96C551F9477055301182B04B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1313CA926E51247117E5C3ACEDE5C23A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E7579EE882BBE902444EDD3C0E321E /* QUIAlertController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QUIAlertController/QUIAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QUIAlertController/QUIAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QUIAlertController/QUIAlertController.modulemap";
+				PRODUCT_MODULE_NAME = QUIAlertController;
+				PRODUCT_NAME = QUIAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A500A6A4A10C72131C61E5807627490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBB024FB2D2F181BD76F80865AE132EA /* Pods-QUIAlertController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AE7798F9F316EA97B1B307F0804617B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D01056E5DD0633A74971F632234F64C /* Pods-QUIAlertController_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF965FAFD75C7FEF90FAC7B1AB8F4C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0831E0A190F0AD48AF050BB0BD64CA01 /* Pods-QUIAlertController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QUIAlertController_Example/Pods-QUIAlertController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6E945153FB898ABB42A24F5A96841D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53ACFCD4D9630E58BE2B7ADE26AF3A5 /* QUIAlertController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QUIAlertController/QUIAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QUIAlertController/QUIAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QUIAlertController/QUIAlertController.modulemap";
+				PRODUCT_MODULE_NAME = QUIAlertController;
+				PRODUCT_NAME = QUIAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE069F3BD3954ACA54796C48D9B57368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D7B351564D955C8223D0D71621EE89 /* Pods-QUIAlertController_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QUIAlertController_Tests/Pods-QUIAlertController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3168297848574E5561A2779D3E74615 /* Build configuration list for PBXNativeTarget "Pods-QUIAlertController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A500A6A4A10C72131C61E5807627490 /* Debug */,
+				EE069F3BD3954ACA54796C48D9B57368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3BFCCACA483E632794039746BC80F73 /* Build configuration list for PBXNativeTarget "QUIAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1313CA926E51247117E5C3ACEDE5C23A /* Debug */,
+				B6E945153FB898ABB42A24F5A96841D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91D315355208998028C2A665D06EF48 /* Build configuration list for PBXNativeTarget "Pods-QUIAlertController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE7798F9F316EA97B1B307F0804617B /* Debug */,
+				AF965FAFD75C7FEF90FAC7B1AB8F4C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
