@@ -28,7 +28,7 @@ static NSUInteger alertControllerCount = 0;
 
 @property(nonatomic, copy, readwrite) NSString *title;
 @property(nonatomic, assign, readwrite) QUIAlertActionStyle style;
-@property(nonatomic, copy) void (^handler)(QUIAlertController *aAlertController, QUIAlertAction *action);
+@property(nonatomic, copy) void (^handler)(QUIAlertController *alertController, QUIAlertAction *action);
 @property(nonatomic, weak) id<QUIAlertActionDelegate> delegate;
 
 @end
@@ -133,8 +133,8 @@ static NSUInteger alertControllerCount = 0;
     
     [self initAppearance];
     
-    self.alertTextFieldMarginBlock = ^UIEdgeInsets(__kindof QUIAlertController *aAlertController, NSInteger aTextFieldIndex) {
-        if (aTextFieldIndex == aAlertController.textFields.count - 1) {
+    self.alertTextFieldMarginBlock = ^UIEdgeInsets(__kindof QUIAlertController *alertController, NSInteger aTextFieldIndex) {
+        if (aTextFieldIndex == alertController.textFields.count - 1) {
             return UIEdgeInsetsMake(0, 0, 16, 0);
         }
         return UIEdgeInsetsZero;

@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, QUIAlertControllerStyle) {
  *
  *  @return QUIAlertController按钮的实例
  */
-+ (instancetype)actionWithTitle:(nullable NSString *)title style:(QUIAlertActionStyle)style handler:(nullable void (^)(__kindof QUIAlertController *aAlertController, QUIAlertAction *action))handler;
++ (instancetype)actionWithTitle:(nullable NSString *)title style:(QUIAlertActionStyle)style handler:(nullable void (^)(__kindof QUIAlertController *alertController, QUIAlertAction *action))handler;
 
 /// `QUIAlertAction`对应的 button 对象
 @property(nonatomic, strong, readonly) QUIButton *button;
@@ -151,7 +151,7 @@ typedef NS_ENUM(NSInteger, QUIAlertControllerStyle) {
 
 /// alert 内部 textField 的 margin，当存在多个 textField 时可通过参数 @c aTextFieldIndex 来为不同 textField 设置不一样的 margin。
 /// @note 注意 margin 是在原有布局基础上叠加的，左右叠加 @c alertHeaderInsets ，顶部 @c alertHeaderInsets.top ，底部为 0。
-@property(nonatomic, copy) UIEdgeInsets (^alertTextFieldMarginBlock)(__kindof QUIAlertController *aAlertController, NSInteger aTextFieldIndex);
+@property(nonatomic, copy) UIEdgeInsets (^alertTextFieldMarginBlock)(__kindof QUIAlertController *alertController, NSInteger aTextFieldIndex);
 
 /// sheet距离屏幕四边的间距，默认UIEdgeInsetsMake(10, 10, 10, 10)。
 @property(nonatomic, assign) UIEdgeInsets sheetContentMargin UI_APPEARANCE_SELECTOR;

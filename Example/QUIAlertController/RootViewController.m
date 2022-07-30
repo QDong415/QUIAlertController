@@ -65,7 +65,7 @@
             [alertController addAction:cancelAction];
             
             //添加一个确认按钮
-            [alertController addAction:[QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *aAlertController, QUIAlertAction *action) {
+            [alertController addAction:[QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *alertController, QUIAlertAction *action) {
                 
             }]];
             
@@ -76,8 +76,8 @@
             // Alert弹框 + UITextField
             QUIAlertController *alertController = [QUIAlertController alertControllerWithTitle:@"请输入账号信息" message:@"两项填写一项即可" preferredStyle:QUIAlertControllerStyleAlert];
             
-            [alertController addAction:[QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *aAlertController, QUIAlertAction *action) {
-                NSLog(@"%@",aAlertController.textFields[0].text);
+            [alertController addAction:[QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *alertController, QUIAlertAction *action) {
+                NSLog(@"%@",alertController.textFields[0].text);
             }]];
             [alertController addCancelAction];
             [alertController addTextFieldWithConfigurationHandler:^(AdjustEdgeInsetTextField * _Nonnull textField) {
@@ -88,9 +88,9 @@
             }];
             
             // 输入框的布局默认是贴在一起的，默认不需要修改，这里只是展示可以通过这个 block 自行调整。
-            alertController.alertTextFieldMarginBlock = ^UIEdgeInsets(__kindof QUIAlertController * _Nonnull aAlertController, NSInteger aTextFieldIndex) {
+            alertController.alertTextFieldMarginBlock = ^UIEdgeInsets(__kindof QUIAlertController * _Nonnull alertController, NSInteger aTextFieldIndex) {
                 UIEdgeInsets margin = UIEdgeInsetsZero;
-                if (aTextFieldIndex == aAlertController.textFields.count - 1) {
+                if (aTextFieldIndex == alertController.textFields.count - 1) {
                     margin.bottom = 16;
                 } else {
                     margin.bottom = 6;
@@ -111,7 +111,7 @@
             [alertCustomView addSubview:thirdView];
             
             QUIAlertAction *action1 = [QUIAlertAction actionWithTitle:@"取消" style:QUIAlertActionStyleCancel handler:NULL];
-            QUIAlertAction *action2 = [QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *aAlertController, QUIAlertAction *action) {
+            QUIAlertAction *action2 = [QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *alertController, QUIAlertAction *action) {
             }];
             QUIAlertController *alertController = [QUIAlertController alertControllerWithTitle:nil message:nil preferredStyle:QUIAlertControllerStyleAlert];
             
@@ -130,7 +130,7 @@
             // Alert弹框 + 内容是view + view是frame
             CommonCodeWriteView *thirdView = [[CommonCodeWriteView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
             thirdView.backgroundColor = UIColor.yellowColor;
-            QUIAlertAction *action2 = [QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *aAlertController, QUIAlertAction *action) {
+            QUIAlertAction *action2 = [QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *alertController, QUIAlertAction *action) {
             }];
             QUIAlertController *alertController = [QUIAlertController alertControllerWithTitle:nil message:nil preferredStyle:QUIAlertControllerStyleAlert];
             
