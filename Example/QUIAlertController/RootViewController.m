@@ -206,6 +206,7 @@
             initWithStyle:UITableViewCellStyleDefault
             reuseIdentifier:@""];
     cell.textLabel.numberOfLines = 0;
+    cell.textLabel.font = [UIFont systemFontOfSize:24];
     switch (indexPath.row) {
         case 0:{
             cell.textLabel.text = @"Alert弹框";
@@ -246,7 +247,7 @@
 
 //设置cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    return 100;
 }
 
 
