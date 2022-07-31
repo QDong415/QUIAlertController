@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import QUIAlertController
 
-class RootSwiftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+@objc class RootSwiftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     private let reuseIdentifier = "UITableViewCell"
     
@@ -22,6 +22,8 @@ class RootSwiftViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func initTableView() {
         tableView = UITableView.init(frame: view.bounds, style: .plain)
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier:reuseIdentifier)
         
         //移除底部多余的separator
         if(tableView.style == UITableView.Style.plain){
@@ -63,7 +65,26 @@ class RootSwiftViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        cell.textLabel?.text = "ddd"
+        cell.textLabel?.numberOfLines = 0
+        switch indexPath.row {
+        case 0:
+            cell.textLabel?.text = "Alert弹框"
+        case 1:
+            cell.textLabel?.text = "Alert弹框 + UITextField"
+        case 2:
+            cell.textLabel?.text = "Alert弹框 + 内容是view + view是用xib约束"
+        case 3:
+            cell.textLabel?.text = "Alert弹框 + 内容是view + view是frame"
+        case 4:
+            cell.textLabel?.text = "基于presentViewController弹框 + 内容是自定义View"
+        case 5:
+            cell.textLabel?.text = "基于presentViewController弹框 + 内容是ViewController"
+        case 6:
+            cell.textLabel?.text = "基于presentViewController弹框 + 内容是UINavigationController"
+            
+        default:
+            break
+        }
         return cell;
     }
     
@@ -88,18 +109,125 @@ class RootSwiftViewController: UIViewController, UITableViewDelegate, UITableVie
             alertController.addAction(cancelAction)
 
             //添加一个确认按钮
-            alertController.addAction(QUIAlertAction(title: "确定", style: .destructive, handler: { alertController, action in
+            alertController.addAction(QUIAlertAction(title: "确定", style: .destructive, handler: { (alertController: QUIAlertController, action: QUIAlertAction) in
 
             }))
 
             alertController.showWith(animated: true)
+            
+        case 1:
+            // Alert弹框 + UITextField
+            let alertController = QUIAlertController(title: "请输入账号信息", message: "两项填写一项即可", preferredStyle: .alert)
+
+            alertController.addAction(QUIAlertAction(title: "确定", style: .destructive, handler: { alertController, action in
+                if let text = alertController.textFields![0].text {
+                    print("\(text)")
+                }
+            }))
+            alertController.addCancelAction()
+            alertController.addTextField(configurationHandler: { textField in
+                textField.placeholder = "账号"
+            })
+            alertController.addTextField(configurationHandler: { textField in
+                textField.placeholder = "密码"
+            })
+
+            // 输入框的布局默认是贴在一起的，默认不需要修改，这里只是展示可以通过这个 block 自行调整。
+            alertController.alertTextFieldMarginBlock = { alertController, aTextFieldIndex in
+                var margin: UIEdgeInsets = .zero
+                if aTextFieldIndex == alertController.textFields!.count - 1 {
+                    margin.bottom = 16
+                } else {
+                    margin.bottom = 6
+                }
+                return margin
+            }
+
+            alertController.showWith(animated: true)
+            
+        case 2:
+            // Alert弹框 + 内容是view + view是用xib约束
+            let thirdView = UINib(nibName: "ThirdView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! ThirdView
+
+            //实际开发中，你往往希望：弹框的高度 == 在xib里手动拉好的高度。弹框的宽度 == 屏幕宽度 - 20 - 20
+            //所以我们需要设置 弹框的宽度 = xibView的宽度 = 屏幕宽度 - 40
+            let alertWidth: CGFloat = self.view.frame.size.width - 40
+            
+            //必须外面再套一层，然后设置autoresizingMask。这样alert的高度就是xib你手动拉出来的高度
+            let containerView = UIView(frame: thirdView.frame)
+            thirdView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+            containerView.addSubview(thirdView)
+            
+            //然后重设包裹层的frame，利用autoresizing的特性，让xibView的宽高等比例缩放
+            containerView.frame = CGRect.init(x: 0, y: 0, width: alertWidth, height: thirdView.frame.size.height);
+
+            let action1 = QUIAlertAction(title: "取消", style: .cancel, handler: nil)
+            let action2 = QUIAlertAction(title: "确定", style: .destructive, handler: { alertController, action in
+            })
+            let alertController = QUIAlertController(title: nil, message: nil, preferredStyle: .alert)
+
+            //Alert弹框的最大宽度。这样设置的话就等于左右20pt空隙
+            alertController.alertContentMaximumWidth = alertWidth
+            //不需要顶部的提示语
+            alertController.alertHeaderInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
+            alertController.addAction(action1)
+            alertController.addAction(action2)
+            alertController.addCustomView(containerView)
+            alertController.showWith(animated: true)
+            
+        case 3:
+            // Alert弹框 + 内容是view + view是frame
+            let thirdView = CommonCodeWriteView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+            thirdView.backgroundColor = UIColor.yellow
+            let action2 = QUIAlertAction(title: "确定", style: .destructive, handler: { alertController, action in
+            })
+            let alertController = QUIAlertController(title: nil, message: nil, preferredStyle: .alert)
+
+            //CustomView宽度我上面设置的是200，整个alertView的宽度我设置的是240，所以左右有20的内间距
+            alertController.alertContentMaximumWidth = 240
+
+            alertController.addCustomView(thirdView)
+            alertController.addAction(action2)
+            alertController.showWith(animated: true)
+            
+        case 4:
+            // 基于presentViewController弹框 + 内容是自定义View
+            let thirdView = CommonCodeWriteView(frame: CGRect(x: 0, y: 0, width: 300, height: 200))
+            thirdView.backgroundColor = UIColor.yellow
+
+            let modal2ViewController = QUIModalPresentationViewController()
+            modal2ViewController.contentView = thirdView
+            modal2ViewController.animationStyle = .popup //中心弹出
+            // 以 presentViewController 的形式展示时，animated 要传 NO，否则系统的动画会覆盖 QUIModalPresentationAnimationStyle 的动画
+            present(modal2ViewController, animated: false)
+            
+        case 5:
+            // 基于presentViewController弹框 + 内容是ViewController
+            let contentViewController = ConInAlertViewController();
+            let modalViewController = QUIModalPresentationViewController();
+            modalViewController.contentViewController = contentViewController;
+            modalViewController.animationStyle = .slide; //从下向上
+            // 以 presentViewController 的形式展示时，animated 要传 NO，否则系统的动画会覆盖 QUIModalPresentationAnimationStyle 的动画
+            present(modalViewController, animated: false)
+        
+        case 6:
+            //基于presentViewController弹框 + 内容是UINavigationController
+            let contentViewController = ConInAlertViewController();
+            let nav = AlertNavigationViewController(rootViewController: contentViewController);
+            let modalViewController = QUIModalPresentationViewController();
+            modalViewController.contentViewController = nav;
+            modalViewController.animationStyle = .fade; //渐变
+            // 以 presentViewController 的形式展示时，animated 要传 NO，否则系统的动画会覆盖 QUIModalPresentationAnimationStyle 的动画
+            present(modalViewController, animated: false)
+        
         default:
             break
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 64
+        return 90
     }
     
     

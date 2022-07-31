@@ -105,24 +105,31 @@
             // Alert弹框 + 内容是view + view是用xib约束
             ThirdView *thirdView = [[[UINib nibWithNibName:@"ThirdView" bundle:nil] instantiateWithOwner:nil options:nil] objectAtIndex:0];
             
+            //实际开发中，你往往希望：弹框的高度 == 在xib里手动拉好的高度。弹框的宽度 == 屏幕宽度 - 20 - 20
+            //所以我们需要设置 弹框的宽度 = xibView的宽度 = 屏幕宽度 - 40
+            float alertWidth = self.view.frame.size.width - 40;
+            
             //必须外面再套一层，然后设置autoresizingMask。这样alert的高度就是xib你手动拉出来的高度
-            UIView *alertCustomView = [[UIView alloc] initWithFrame:[thirdView frame]];
+            UIView *containerView = [[UIView alloc] initWithFrame:thirdView.bounds];
             thirdView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-            [alertCustomView addSubview:thirdView];
+            [containerView addSubview:thirdView];
+            
+            //然后重设包裹层的frame，利用autoresizing的特性，让xibView的宽高等比例缩放
+            containerView.frame = CGRectMake(0, 0, alertWidth, thirdView.frame.size.height);
             
             QUIAlertAction *action1 = [QUIAlertAction actionWithTitle:@"取消" style:QUIAlertActionStyleCancel handler:NULL];
             QUIAlertAction *action2 = [QUIAlertAction actionWithTitle:@"确定" style:QUIAlertActionStyleDestructive handler:^(QUIAlertController *alertController, QUIAlertAction *action) {
             }];
             QUIAlertController *alertController = [QUIAlertController alertControllerWithTitle:nil message:nil preferredStyle:QUIAlertControllerStyleAlert];
             
-            //Alert弹框的最大宽度。这样设置的话就等于左右10pt空隙
-            alertController.alertContentMaximumWidth = self.view.frame.size.width - 20;
+            //Alert弹框的最大宽度。这样设置的话就等于左右20pt空隙
+            alertController.alertContentMaximumWidth = alertWidth;
             //不需要顶部的提示语
             alertController.alertHeaderInsets = UIEdgeInsetsMake(0, 0, 0, 0);
             
             [alertController addAction:action1];
             [alertController addAction:action2];
-            [alertController addCustomView:alertCustomView];
+            [alertController addCustomView:containerView];
             [alertController showWithAnimated:YES];
         }
             break;

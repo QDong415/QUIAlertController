@@ -28,7 +28,7 @@
      
     _centerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     _centerLabel.numberOfLines = 0;
-    _centerLabel.text = @"我是基于Frame写的UILabel、我是基于Frame写的UILabel、我是基于Frame写的UILabel、我是基于Frame写的UILabel、我是基于Frame写的UILabel";
+    _centerLabel.text = @"黄色View是基于Frame代码写的UIView，中间是个UILabel。\n\n黄色View的宽高为200pt。整个Alert的宽高我设置为240pt\n\n以上参数都可以修改";
     [self addSubview:_centerLabel];
     
 }
